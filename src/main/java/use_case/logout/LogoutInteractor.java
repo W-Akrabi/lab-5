@@ -11,6 +11,8 @@ public class LogoutInteractor implements LogoutInputBoundary {
                             LogoutOutputBoundary logoutOutputBoundary) {
         // TODO: save the DAO and Presenter in the instance variables.
         // Which parameter is the DAO and which is the presenter?
+        this.userDataAccessObject = userDataAccessInterface;
+        this.logoutPresenter = logoutOutputBoundary;
     }
 
     @Override
